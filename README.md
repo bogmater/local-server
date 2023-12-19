@@ -18,6 +18,14 @@ directory mask = 0777
 public = no
 ```
 
+Setting a samba password:
+
+`sudo smbpasswd -a {username}`
+
+After that:
+
+`sudo systemctl restart smbd`
+
 ## Auto-mounting an external drive via fstab
 
 `sudo blkid` to get UUID of the disk partition
